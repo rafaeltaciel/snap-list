@@ -1,61 +1,140 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snap List - Baixe vídeos e músicas facilmente</title>
-    
-    <meta name="description" content="Baixe vídeos do YouTube, músicas do Facebook, e reels do Instagram com o aplicativo Snap List. Simples, rápido e seguro.">
-    <meta name="keywords" content="download de vídeos YouTube, músicas do Facebook, baixar reels Instagram, Snap List app, baixar músicas, baixar vídeos, reels download, download rápido, aplicativo de downloads, Arduino">
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Fonte e corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
 
-<body>
-    <header>
-        <h1>📥 Snap List</h1>
-        <p>Baixe vídeos e músicas de várias plataformas em poucos cliques!</p>
-    </header>
+/* Dark mode automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    color: #ccc;
+  }
+  header {
+    background-color: #2b2b2b;
+  }
+  main section {
+    background-color: #2a2a2a;
+    color: #ccc;
+  }
+  footer {
+    color: #888;
+  }
+}
 
-    <main>
-        <section>
-            <h2>🚀 Como usar o Snap List</h2>
-            <p>Siga estes passos para baixar seus vídeos e músicas favoritos:</p>
-            <ol>
-                <li>🔗 Copie o link do vídeo ou música que deseja baixar.</li>
-                <li>📋 Cole o link na barra de download do Snap List.</li>
-                <li>🎵 Escolha o formato desejado (MP3, MP4, etc.).</li>
-                <li>⬇️ Clique em "Baixar" e aguarde o download ser concluído.</li>
-            </ol>
-        </section>
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4f8ef7;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
 
-        <section>
-            <h2>❓ Perguntas Frequentes</h2>
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-            <details>
-                <summary><h3>🆓 O Snap List é gratuito?</h3></summary>
-                <p>Sim, o Snap List é totalmente gratuito para todos os usuários.</p>
-            </details>
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
 
-            <details>
-                <summary><h3>📜 Posso baixar playlists completas?</h3></summary>
-                <p>Sim! O Snap List permite baixar playlists inteiras de forma simples e rápida.</p>
-            </details>
+/* Botão primário */
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #4f8ef7;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-            <details>
-                <summary><h3>🌐 Quais sites são compatíveis?</h3></summary>
-                <p>Atualmente, o Snap List suporta downloads do YouTube, Facebook, Instagram e muitos outros.</p>
-            </details>
+.btn-primary:hover {
+  background-color: #4f8ef7;
+  color: white;
+}
 
-            <details>
-                <summary><h3>🙅‍♂️ Preciso criar uma conta para usar?</h3></summary>
-                <p>Não, você pode usar o Snap List sem a necessidade de criar uma conta.</p>
-            </details>
-        </section>
-    </main>
+/* Seções principais */
+main section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
 
-    <footer>
-        <p>© 2025 Snap List. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+h2 {
+  font-size: 2rem;
+  color: #4f8ef7;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* FAQ detalhes */
+details {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f9f9f9;
+  transition: background 0.3s;
+}
+
+details[open] {
+  background: #e0f0ff;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Animações */
+details > *:not(summary) {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Lista */
+ol {
+  margin-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
