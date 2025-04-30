@@ -19,13 +19,10 @@
   <title>
    Snap List - Baixador de YouTube, Facebook e Instagram
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
-  <link rel="icon" type="image/x-icon" href="icone.ico">
-
-
+  <link rel="icon" type="image/x-icon" href="icone.ico"/>
   <style>
    body {
       font-family: 'Montserrat', sans-serif;
@@ -44,7 +41,6 @@
       border: 2px solid #121212;
     }
   </style>
-  <!-- Schema.org for Google -->
   <script type="application/ld+json">
    {
       "@context": "http://schema.org",
@@ -96,8 +92,7 @@
      </li>
     </ul>
     <button aria-label="Abrir menu" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-green-400 rounded" id="menu-btn">
-     <i class="fas fa-bars fa-lg">
-     </i>
+     <i class="fas fa-bars fa-lg"></i>
     </button>
    </nav>
    <div class="hidden bg-black border-t border-gray-800 md:hidden" id="mobile-menu">
@@ -126,7 +121,6 @@
    </div>
   </header>
   <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-20">
-   <!-- Apresentação -->
    <section class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16" id="apresentacao">
     <img alt="Ícone do aplicativo Snap List, símbolo azul escuro estilizado sobre fundo preto" class="w-48 h-48 md:w-72 md:h-72 rounded-3xl shadow-lg" height="320" loading="lazy" src="Snap list.png" width="320"/>
     <div class="max-w-xl text-center md:text-left space-y-6">
@@ -139,9 +133,11 @@
      <p class="text-white text-lg leading-relaxed">
       Com o Snap List, você pode baixar vídeos e áudios do YouTube, Facebook e Instagram rapidamente, com interface escura elegante e intuitiva.
      </p>
+     <p class="text-green-400 font-semibold text-lg leading-relaxed">
+      Os arquivos baixados serão salvos na pasta <span class="font-mono bg-gray-800 px-1 rounded">downloads</span> criada dentro da pasta onde o aplicativo está executando. Dentro dela, os vídeos estarão na subpasta <span class="font-mono bg-gray-800 px-1 rounded">video</span> e as músicas na subpasta <span class="font-mono bg-gray-800 px-1 rounded">audio</span>.
+     </p>
     </div>
    </section>
-   <!-- Instruções de uso -->
    <section class="max-w-4xl mx-auto space-y-10" id="instrucoes">
     <h2 class="text-3xl font-bold text-white border-b-4 border-green-400 pb-2 select-none">
      Como usar o Snap List
@@ -167,7 +163,6 @@
      </li>
     </ol>
    </section>
-   <!-- Botões de download -->
    <section class="max-w-4xl mx-auto bg-[#121212] rounded-3xl p-10 shadow-lg flex flex-col md:flex-row items-center justify-center gap-10" id="download">
     <div class="flex flex-col items-center space-y-4">
      <img alt="Ícone do Windows azul escuro com fundo preto" class="w-24 h-24 rounded-lg" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/88f70103-72d8-407c-74fc-c2aff2da0736.jpg" width="96"/>
@@ -177,12 +172,11 @@
     </div>
     <div class="flex flex-col items-center space-y-4">
      <img alt="Ícone do Linux azul escuro com fundo preto" class="w-24 h-24 rounded-lg" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1f30712a-4846-4072-ff2c-7d9254ffc0a7.jpg" width="96"/>
-     <a class="inline-block bg-green-400 text-black font-semibold rounded-lg px-8 py-3 shadow-md hover:bg-green-500 transition-colors duration-300 select-none" href="https://github.com/rafaeltaciel/snap-list/releases/download/SnapList/Snap.List.Linux.tar.gz">
+     <a class="inline-block bg-green-400 text-black font-semibold rounded-lg px-8 py-3 shadow-md hover:bg-green-500 transition-colors duration-300 select-none" href="https://github.com/rafaeltaciel/snap-list/releases/download/SnapList/snaplist.deb">
       Download para Linux
      </a>
     </div>
    </section>
-   <!-- FAQ -->
    <section class="max-w-4xl mx-auto space-y-10" id="faq">
     <h2 class="text-3xl font-bold text-white border-b-4 border-green-400 pb-2 select-none">
      Perguntas Frequentes
@@ -191,8 +185,7 @@
      <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
       <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
        O Snap List é gratuito?
-       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300">
-       </i>
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
       </summary>
       <p class="mt-4 text-gray-300 leading-relaxed">
        Sim, o Snap List é totalmente gratuito para baixar e usar sem limitações.
@@ -201,8 +194,7 @@
      <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
       <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
        O aplicativo suporta downloads em alta qualidade?
-       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300">
-       </i>
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
       </summary>
       <p class="mt-4 text-gray-300 leading-relaxed">
        Sim, você pode escolher a qualidade do vídeo ou áudio antes de iniciar o download.
@@ -211,8 +203,7 @@
      <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
       <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
        O Snap List está disponível em dispositivos iOS?
-       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300">
-       </i>
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
       </summary>
       <p class="mt-4 text-gray-300 leading-relaxed">
        No momento, o Snap List está disponível apenas para Windows e Linux.
@@ -221,8 +212,7 @@
      <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
       <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
        O Snap List pode baixar vídeos e músicas do Facebook e Instagram?
-       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300">
-       </i>
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
       </summary>
       <p class="mt-4 text-gray-300 leading-relaxed">
        Sim, agora o Snap List suporta downloads de vídeos e músicas do Facebook e Instagram, além do YouTube.
@@ -231,11 +221,19 @@
      <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
       <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
        A função de áudio para Instagram e Facebook está funcionando?
-       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300">
-       </i>
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
       </summary>
       <p class="mt-4 text-gray-300 leading-relaxed">
        Sim, a função de download de áudio para Instagram e Facebook foi corrigida e está funcionando corretamente.
+      </p>
+     </details>
+     <details class="bg-[#121212] rounded-2xl p-6 cursor-pointer group">
+      <summary class="font-semibold text-white text-lg list-none flex justify-between items-center select-none">
+       Onde os arquivos de música e vídeo são salvos após o download?
+       <i class="fas fa-chevron-down text-green-400 group-open:rotate-180 transition-transform duration-300"></i>
+      </summary>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+       Os arquivos baixados são salvos na pasta onde o aplicativo está executando. Dentro dessa pasta, o Snap List cria uma pasta chamada <span class="font-mono bg-gray-800 px-1 rounded">downloads</span>, que contém duas subpastas: <span class="font-mono bg-gray-800 px-1 rounded">video</span> para os vídeos e <span class="font-mono bg-gray-800 px-1 rounded">audio</span> para as músicas.
       </p>
      </details>
     </div>
@@ -247,12 +245,11 @@
    </p>
   </footer>
   <script>
-   // Script para abrir e fechar o menu mobile
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+   const menuBtn = document.getElementById('menu-btn');
+   const mobileMenu = document.getElementById('mobile-menu');
+   menuBtn.addEventListener('click', () => {
+     mobileMenu.classList.toggle('hidden');
+   });
   </script>
  </body>
 </html>
